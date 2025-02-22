@@ -189,9 +189,22 @@ in our case, the header. */
 
 /* bacgrund colour of main */
 main {
-    background-color: lightblue;
+ /* We do not need a colour as we want background image 
+    background-color: lightblue; */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/* hero section*/
+#hero {
+    height:600px;
+    width: 100%;
+    background-color: lightgreen;
+    /* want it to be centred both horizontally and vertically,
+so we need to type centre twice.
+we want it to automatically size itself so it covers the entire
+hero section withou disorting*/
+    background: url(../images/hero-image.webp) no-repeat center center/cover;
 }
 
  /* footer background colour */
