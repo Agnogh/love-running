@@ -101,6 +101,7 @@ screen when there is enough content on the page that the user needs to scroll. *
     /* our elements will still show underneath each other. */
     flex-direction: column;
     color: #3a3a3a;
+    font-family: "lato", sans-serif;
 }
 
 /* header background colour */
