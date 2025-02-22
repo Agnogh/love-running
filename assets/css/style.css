@@ -195,8 +195,25 @@ main {
 }
 
  /* footer background colour */
+ /* Since we will not be using that anymore, we can comment it out 
 footer {
     background-color: green;
+}
+*/
+#social-networks {
+    text-align: center;
+    /* adding some vertical breadhing space above and below icons*/
+    padding: 20px 0;
+    /* flexbox used to space out icons equaliy */
+    display: flex;
+    justify-content: space-evenly;  
+    list-style-type: none;  
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
 }
 
 /* media query for tablets and iPads (768px and larger) */
