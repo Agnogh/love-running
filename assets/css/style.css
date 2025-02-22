@@ -113,12 +113,20 @@ header {
     /* spreads to the full length*/
     width: 100%;
     /* creating shadow 1st value is top-bottom and 2nd value is left-right 3rd vale is how 
-    hard / blured the shadow will be*/
-    box-shadow: 0 2px 2px;
+    hard / blured the shadow will be 4th value is colour*/
+    box-shadow: 0 2px 2px #3a3a3a;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1 {
     font-family: "oswald", sans-serif;    
+    text-transform: uppercase;
+    /* adding spaces between letters */ 
+    letter-spacing: 2px;
+    color: #252525;
 }
 
 /* bacgrund colour of main */
