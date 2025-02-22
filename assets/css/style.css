@@ -104,6 +104,14 @@ screen when there is enough content on the page that the user needs to scroll. *
     font-family: "lato", sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: "oswald", sans-serif;    
+    text-transform: uppercase;
+    /* adding spaces between letters */ 
+    letter-spacing: 2px;
+    color: #252525;
+}
+
 /* header background colour */
 header {
     background-color: #ffffff;
@@ -126,13 +134,7 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: "oswald", sans-serif;    
-    text-transform: uppercase;
-    /* adding spaces between letters */ 
-    letter-spacing: 2px;
-    color: #252525;
-}
+
 
 /* styling unordered list*/
 #menu {
@@ -205,6 +207,24 @@ so we need to type centre twice.
 we want it to automatically size itself so it covers the entire
 hero section withou disorting*/
     background: url(../images/hero-image.webp) no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    /* it will show relative to the "hero" section*/
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
 }
 
  /* footer background colour */
@@ -258,6 +278,12 @@ footer {
         /* Push main content down to accomodatelarger header */ 
         margin-top: 79px;
     }
+
+    /* Hero */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    } 
 }
 /* Large devices )laptops and desktops, 992px and up */
 @media screen and (min-width: 992px) {
