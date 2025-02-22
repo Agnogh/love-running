@@ -191,6 +191,7 @@ in our case, the header. */
 main {
     background-color: lightblue;
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 
  /* footer background colour */
