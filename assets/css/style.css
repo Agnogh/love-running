@@ -115,6 +115,11 @@ header {
     /* creating shadow 1st value is top-bottom and 2nd value is left-right 3rd vale is how 
     hard / blured the shadow will be 4th value is colour*/
     box-shadow: 0 2px 2px #3a3a3a;
+    /* displays content next to eac other - checbox nect to the header*/ 
+    display: flex;
+    justify-content: space-between;
+    /* making sure they align vertically*/
+    align-items: baseline;
 }
 header a {
     text-decoration: none;
@@ -158,7 +163,29 @@ in our case, the header. */
     box-shadow: 0 2px 2px #3a3a3a;
     width: 100%;
 /*    position: fixed; */
+/* we set diplay as "none" so that they are hidden until selected */
+    display: none;
+/* Effectively, this tells the navigation element that the top of the
+ element should start at the bottom of its parent. */
+    top: 100%
 }
+
+/* Check boxes have a pseudo class that indicates
+    when they are checked - we need the tilde to
+    indicate that we want to target the adjoining
+    nav element.*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle-label {
+    font-size: 2rem;
+}
+
 
 /* bacgrund colour of main */
 main {
