@@ -106,7 +106,15 @@ screen when there is enough content on the page that the user needs to scroll. *
 
 /* header background colour */
 header {
-    background-color: lightcoral;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    /* spreads to the full length*/
+    width: 100%;
+    /* creating shadow 1st value is top-bottom and 2nd value is left-right 3rd vale is how 
+    hard / blured the shadow will be*/
+    box-shadow: 0 2px 2px;
 }
 
 h1 {
