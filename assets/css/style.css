@@ -92,7 +92,7 @@ element, it will be applied to the entire element, including the border. */
     box-sizing: border-box; 
 } 
 
-/* body style rules */
+/* general body style rules */
 body {
     /* Using min-height will allow it to stretch larger than the height of the
 screen when there is enough content on the page that the user needs to scroll. */
@@ -110,6 +110,10 @@ h1, h2, h3 {
     /* adding spaces between letters */ 
     letter-spacing: 2px;
     color: #252525;
+}
+
+.hidden-heading {
+    display: none;
 }
 
 /* header background colour */
@@ -287,6 +291,8 @@ hero section withou disorting*/
    each dic will expand to fill the available space on its row*/
     flex-basis: 200px;
     flex-grow: 1;
+    /* creates a grid of meetup time dives over the background image */
+    border: 2px solid white;
 }
 
 #times h3 {
