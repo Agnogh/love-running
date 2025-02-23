@@ -264,6 +264,35 @@ hero section withou disorting*/
     max-height: 300px;
 }
 
+#benefit-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* meetup time section*/
+#times {
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
+    /* handles responsivity without the need for a media query*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+   /* this will not wrap on screen of less than 400px wide 
+   each dic will expand to fill the available space on its row*/
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+#times h3 {
+    /* override the heading colour set in general styles */
+    color: #fafafa;
+}
 
 /* footer background colour */
  /* Since we will not be using that anymore, we can comment it out 
